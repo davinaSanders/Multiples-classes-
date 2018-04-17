@@ -10,7 +10,9 @@ class BusStop
     @queue.push(name)
   end
 
+
   def put_on_bus
     @people_on_bus += @queue.count()
+    @queue = []
   end
 end
